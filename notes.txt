@@ -1,0 +1,23 @@
+Components of UNIX:
+----------------
+two important components:
+   Shell
+   Kernel
+   
+1. Shell:
+---------
+-It is outer layer of UNIX operating system
+-Shell reads command provided by user.
+-Shell will check is it valid command or not
+-If everything is correct, then Shell interprets/converts that command into kernel understandable form.
+
+2. Kernel:
+-----------
+-It is the core component of UNIX.
+- It is responsable to execute our commands with the help of hardware components
+------------------
+
+normal user ===> $ prompt
+super user /root user /admin user ===> # prompt
+sudo -i ===> super user can do :to switch to super user 
+
