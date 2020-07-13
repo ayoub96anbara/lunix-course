@@ -14,10 +14,127 @@ two important components:
 2. Kernel:
 -----------
 -It is the core component of UNIX.
-- It is responsable to execute our commands with the help of hardware components
+-It is responsable to execute our commands with the help of hardware components
 ------------------
 
 normal user ===> $ prompt
 super user /root user /admin user ===> # prompt
 sudo -i ===> super user can do :to switch to super user 
+----------------------------
+
+Topic-2: Linux File System:
+--------------------
+Types of files in linux:
+----------
+In Python everything is treated as an object.
+In linux everything is treated as a file.
+
+1. Normal files
+2. Directory Files
+3. Device files
+
+1. Normal files:
+--------
+these files contain data. it can be text file or binary files
+ex:
+abc.txt
+test.sh ==> Script file
+test.py ==> Python file
+test.java ==> Java file
+sunny.jpg
+vedio.mp4
+
+=>In Linux file extension is not important. based on our content the linux can identify file type.
+
+2. Directory files:
+-----------
+These files represent directories.
+In windows, we can use folder terminalogy but in linux we can use directory terminalogy.
+
+:)to check type of file: $ file name
+
+3. Device Files:
+---------
+
+In linux every device(terminal, keyboard, mouse...) is represented as a file.
+By using this file we can communicate with that device.
+Inside /dev directory all devices related files will be there.
+
+terminal is also a file.
+terminal 1 ==his file ==> /dev/pts/0
+terminal 2 ==his file ==> /dev/pts/1
+how to know them? $ tty 
+
+
+How to check file type:
+----------------------
+IN Ubuntu:
+blue color files respesents: directories
+remaining: normal files
+
+in generaly we have to use: $ ls -l
+ex:
+-rw-rw-r--  1 hp hp   13561 Jan 12 16:58 'wifi code.odt'
+drwxr-xr-x 32 hp hp    4096 Jun 26 12:48  workspace_angular
+-rwxrwxr-x  1 hp hp     310 May 24 13:39  Xampp.desktop
+
+The first character represents the type of file:
+(-) means normal file
+(d) means  directory
+(l) means link file
+(c)       character special file
+(b)       block special file
+(s)       socket file
+
+Linux file system hierarchy:
+---------------------------
+
+Linux file system has TREE like structure.
+It starts with root(/)
+/ is the topmost directory.
+sub directories:
+bin  etc  dev  home  lib  usr  cdrom
+
+1. bin directory:
+----------------
+bin means binary
+It contains all binary executables related to our linux commands.
+
+touch
+cd
+mkdir
+ls
+
+2. sbin directory:
+----------------
+sbin means systembin
+
+Q. What is the difference between bin and sbin?
+bin contains binary executables related to commands used by normal user.
+sbin contains binary executable related to commands used by super user.
+
+3. etc directory:
+----------------
+
+This directory contains all system configuration files.
+These configuration files can be used by operating system itself.
+
+/etc/passwd ==> all users informations  
+
+4. tmp directory:
+----------------
+
+
+-----------------------------
+to open documentaion for command :
+$ man command
+
+to open file from terminal:
+$ xdg-open fileName
+
+
+
+
+
+
 
